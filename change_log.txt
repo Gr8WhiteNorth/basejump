@@ -1,3 +1,8 @@
 ------------------------------------------------------------------------------------------------------------------
+Version 0.1.1
+	- Added intro text to readme.md
+	- Added screenshot.png
+
+------------------------------------------------------------------------------------------------------------------
 Version 0.1.0
-    - Basejump WordPress theme ready for use
+	- Basejump WordPress theme ready for use
