@@ -18,14 +18,8 @@ With the name I have tried to already suggest what it is. Take this theme and "j
 
 Although the Basejump WordPress theme is a base theme for you to build upon, it still comes packed with quite a few features and I have coded it for WordPress 3.4 and above.
 
-* Six different Page Templates, neatly organized in their own Page Templates directory (WordPress 3.4 feature); in alphabetical order:
-+ Alt Content Sidebar
-+ Alt Sidebar Content
-+ Content Sidebar
-+ Content Sidebar Alt
-+ Full Width
-+ Sidebar Content
-* Upto six columns (best used on the one column Page Template)
+* Six different Page Templates, neatly organized in their own Page Templates directory (WordPress 3.4 feature)
+* * Upto six columns (best used on the one column Page Template)
 * WPML ready and when activated it shows the language menu right in the menu bar navigation
 
 ## Installation
