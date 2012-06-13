@@ -19,11 +19,15 @@ With the name I have tried to already suggest what it is. Take this theme and "j
 Although the Basejump WordPress theme is a base theme for you to build upon, it still comes packed with quite a few features and I have coded it for WordPress 3.4 and above.
 
 * Six different Page Templates, neatly organized in their own Page Templates directory (WordPress 3.4 feature)
-* Upto six columns (best used on the one column Page Template)
+* Upto six columns (best used on the Full Width Page Template)
 * WPML ready and when activated it shows the language menu right in the menu bar navigation
+* Custom background with default background when no custom background has been uploaded by the user; coded with add_theme_support (WordPress 3.4 feature)
+* Seven "sidebars" that can be used for widgets
+* Responsive
 
 ## Installation
 
+After activation the first thing to do is to add a navigation menu and appoint that menu to be the Primary. Only then will all the features of the theme work out of the box and will the theme immediately look good.
 
 
 ## Disclaimer
