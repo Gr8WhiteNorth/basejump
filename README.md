@@ -33,14 +33,14 @@ After activation the first thing to do is to add a navigation menu and appoint t
 
 Only if you do these two things first, will all the features of the theme work out of the box and will the theme immediately look good.
 
-## TODO LIST
-
-* To make a default .pot and .po file
-
 ## Why is the Basejump WordPress Theme not downloadable via the WordPress Theme Repository?
 
 Good question!
 Not because I am lazy. The main reason is that I have built the Basejump WordPress Theme with future development (for clients) in mind. Not sure about you, but none of my clients ever has wanted to be able to change the header of the theme. My clients actually want to show their company-logo in the header. One of the requirements of listing a theme in the official WordPress Theme Repository is that you need to have the `add_theme_support('custom-header')` functionality included. As I don't do custom headers the Basejump WordPress Theme therefore cannot be included in the Repository.
+
+## TODO LIST
+
+* To make a default .pot and .po file
 
 ## Disclaimer
 
