@@ -22,49 +22,26 @@ Although the Basejump WordPress theme is a base theme for you to build upon, it 
 * Upto six columns (best used on the Full Width Page Template)
 * WPML ready and when activated it shows the language menu right in the menu bar navigation
 * Custom background with default background when no custom background has been uploaded by the user; coded with add_theme_support (WordPress 3.4 feature)
-* Seven "sidebars" that can be used for widgets
+* Seven "sidebars" including 4 in the footer that can be used for widgets
 * Responsive
 
 ## Installation
 
-After activation the first thing to do is to add a navigation menu and appoint that menu to be the Primary. Only then will all the features of the theme work out of the box and will the theme immediately look good.
+Upload the entire basejump directory to the wp-content folder and activate it through the WordPress Dashboard.
 
-<<<<<<< HEAD
+After activation the first thing to do is to add a navigation menu and appoint that menu to be the Primary. Second I suggest to go to the widgets and delete all the widgets that WordPress automatically adds to the first available widget on a fresh install.
+
+Only if you do these two things first, will all the features of the theme work out of the box and will the theme immediately look good.
+
+## TODO LIST
+
+* To make a default .pot and .po file
+
+## Why is the Basejump WordPress Theme not downloadable via the WordPress Theme Repository?
+
+Good question!
+Not because I am lazy. The main reason is that I have built the Basejump WordPress Theme with future development (for clients) in mind. Not sure about you, but none of my clients ever has wanted to be able to change the header of the theme. My clients actually want to show their company-logo in the header. One of the requirements of listing a theme in the official WordPress Theme Repository is that you need to have the `add_theme_support('custom-header')` functionality included. As I don't do custom headers the Basejump WordPress Theme therefore cannot be included in the Repository.
 
 ## Disclaimer
 
 The Basejump WordPress theme runs on WordPress version 3.4 and above and I offer no backward compatibility.
-=======
-
-## Disclaimer
-
-The Basejump WordPress theme runs on WordPress version 3.4 and above and I offer no backward compatibility.
-
-
-
-SAMPLE README.MD:
-# Search Replace DB
-
-This script was made to aid the process of migrating PHP and MySQL based websites. It has additional features for WordPress but works for most other similar CMSes.
-
-If you find a problem let us know in the issues area and if you can improve the code then please fork the repository and send us a pull request :)
-
-## Usage
-
-* Migrate all your website files
-* Upload the script to your web root (or the same folder as wp-config.php)
-* Browse to the script's URL in your web browser
-* Follow the on-screen instructions
-
-### CLI script
-
-1. Run the CLI script from the command line like so:
-   ```./searchreplacedb2cli.php --host localhost --user root --database test --pass "pass" --charset utf\-8 --search "findMe" --replace "replaceMe"```
-2. use the `--dry-run` flag to do a dry run without searching/replacing
-
-You can use short form arguments too so `--host` becomes `-h` and so on.
-
-## _Note_
-
-If you use some dynamic processing to setup the database definitions in WordPress try using the 'filestream' branch. Let us know if you find any bugs or have any suggestions to improve it.	
->>>>>>> readme & js

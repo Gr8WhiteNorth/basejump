@@ -9,15 +9,6 @@ bloginfo( 'name' );
 $site_description = get_bloginfo( 'description', 'display' );
 if ( $site_description && ( is_home() || is_front_page() ) ) echo " | $site_description"; ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<script>
-	/*
-	//optional: set config options here!
-	var rwd_images = { 
-		widthBreakPoint: 600
-	};
-	*/
-</script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/responsiveimgs.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
