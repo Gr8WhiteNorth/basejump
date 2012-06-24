@@ -20,6 +20,7 @@ Although the Basejump WordPress theme is a base theme for you to build upon, it 
 
 * Six different Page Templates, neatly organized in their own Page Templates directory (WordPress 3.4 feature)
 * Upto six columns (best used on the Full Width Page Template)
+* Fully internationalized
 * WPML ready and when activated it shows the language menu right in the menu bar navigation
 * Custom background with default background when no custom background has been uploaded by the user; coded with add_theme_support (WordPress 3.4 feature)
 * Seven "sidebars" including 4 in the footer that can be used for widgets
