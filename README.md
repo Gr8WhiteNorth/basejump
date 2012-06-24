@@ -34,14 +34,30 @@ After activation the first thing to do is to add a navigation menu and appoint t
 
 Only if you do these two things first, will all the features of the theme work out of the box and will the theme immediately look good.
 
-## Why is the Basejump WordPress Theme not downloadable via the WordPress Theme Repository?
+## FAQ
+### Why is the Basejump WordPress Theme not downloadable via the WordPress Theme Repository?
 
 Good question!
 Not because I am lazy. The main reason is that I have built the Basejump WordPress Theme with future development (for clients) in mind. Not sure about you, but none of my clients ever has wanted to be able to change the header of the theme. My clients actually want to show their company-logo in the header. One of the requirements of listing a theme in the official WordPress Theme Repository is that you need to have the `add_theme_support('custom-header')` functionality included. As I don't do custom headers the Basejump WordPress Theme therefore cannot be included in the Repository.
 
+### Why does Basejump look so much like the default Genesis child theme?
+
+Fans of Genesis will indeed quickly see that Basejump looks very much like the default Child theme of that premium framework. I actually have tried to work with Genesis, but gave up because to me it is just not a natural way of putting together a website. The reason that my Basejump theme looks so much alike is because I very much like the structure of how the Genesis default child theme has been set up. So I decided to rip it apart and use the structure to base my theme on.
+
 ## TODO LIST
 
-* To make a default .pot and .po file
+To make a default .pot and .po file
+
+## Comments / Questions
+
+You can leave any comments and/or ask any questions on the announcement post on [my website](http://senlinonline.com/2012/06/24/basejump-wordpress-theme/)
+
+## Demo
+
+Actually that should be on the todo list too, but I have used the Basejump WordPress Theme already for a live site that you can see [here](http://senlinhostingclub.com).
+
+## Download (or Fork)
+The Basejump WordPress Theme can be downloaded (or forked) from [GitHub](https://github.com/senlin/basejump).
 
 ## Disclaimer
 
