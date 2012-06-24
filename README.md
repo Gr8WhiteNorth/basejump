@@ -24,6 +24,7 @@ Although the Basejump WordPress theme is a base theme for you to build upon, it 
 * WPML ready and when activated it shows the language menu right in the menu bar navigation
 * Custom background with default background when no custom background has been uploaded by the user; coded with add_theme_support (WordPress 3.4 feature)
 * Seven "sidebars" including 4 in the footer that can be used for widgets
+* 4 Social Media share buttons in post footer on single post template
 * Responsive
 
 ## Installation
