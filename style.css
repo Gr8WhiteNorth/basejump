@@ -382,6 +382,8 @@ p.wp-caption-text { font-size: 14px; margin: 5px 0; }
 
 #sidebar-alt { float: left; width: 150px; }
 
+.page-template-page-templatescontent-sidebar-alt-php #sidebar-alt { margin-left: 20px; }
+
 .page-template-page_content-sidebar-alt-php #sidebar-alt { float: right; }
 
 .sidebar-content #sidebar, .sidebar-sidebar-content #sidebar { float: left; }

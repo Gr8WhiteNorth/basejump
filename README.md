@@ -20,6 +20,7 @@ Although the Basejump WordPress theme is a base theme for you to build upon, it 
 
 * Six different Page Templates, neatly organized in their own Page Templates directory (WordPress 3.4 feature)
 * Upto six columns (best used on the Full Width Page Template)
+* Superfish navigation dropdown menu
 * Fully internationalized
 * WPML ready and when activated it shows the language menu right in the menu bar navigation
 * Custom background with default background when no custom background has been uploaded by the user; coded with add_theme_support (WordPress 3.4 feature)
@@ -55,7 +56,7 @@ You can leave any comments and/or ask any questions on the announcement post on 
 
 ## Demo
 
-Actually that should be on the todo list too, but I have used the Basejump WordPress Theme already for a live site that you can see [here](http://senlinhostingclub.com).
+Since the end of June 2012 The Basejump WordPress Theme has it's own demo domain at [http://wpbaseju.mp](http://wpbaseju.mp). You can see another live site where I have used the theme [here](http://senlinhostingclub.com).
 
 ## Download (or Fork)
 The Basejump WordPress Theme can be downloaded (or forked) from [GitHub](https://github.com/senlin/basejump).
