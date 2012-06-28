@@ -46,6 +46,10 @@ Not because I am lazy. The main reason is that I have built the Basejump WordPre
 
 Fans of Genesis will indeed quickly see that Basejump looks very much like the default Child theme of that premium framework. I actually have tried to work with Genesis, but gave up because to me it is just not a natural way of putting together a website. The reason that my Basejump theme looks so much alike is because I very much like the structure of how the Genesis default child theme has been set up. So I decided to rip it apart and use the structure to base my theme on.
 
+### How to code the columns as can be seen on the Page "up to 6 columns"?
+
+On the Page [up to 6 columns](http://wpbaseju.mp/page-templates/full-width/upto-6-columns/) you can see that you can add up to 6 columns. Adding these columns is done with classes as can be seen in the source code of that page. For your convenience I have pasted it on [Pastie](http://pastie.org/4163053), so you can also easily copy it from there.
+
 ## TODO LIST
 
 To make a default .pot and .po file
