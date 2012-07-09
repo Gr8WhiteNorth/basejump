@@ -48,7 +48,7 @@ Fans of Genesis will indeed quickly see that Basejump looks very much like the d
 
 ### How to code the columns as can be seen on the Page "up to 6 columns"?
 
-On the Page [up to 6 columns](http://wpbaseju.mp/page-templates/full-width/upto-6-columns/) you can see that you can add up to 6 columns. Adding these columns is done with classes as can be seen in the source code of that page. For your convenience I have pasted it on [Pastie](http://pastie.org/4163053), so you can also easily copy it from there.
+On the Page [up to 6 columns](http://wpbaseju.mp/page-templates/full-width/upto-6-columns/) you can see that you can add up to 6 columns. Adding these columns is done with classes as can be seen in the source code of that page. For your convenience I have made a [Gist](https://gist.github.com/3011643), so you can also easily copy it from there. Probably overkill, but nevertheless: although it works on all page templates, more than 4 columns is best used on the full width page template.
 
 ## TODO LIST
 

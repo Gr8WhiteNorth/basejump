@@ -4,7 +4,7 @@ Theme URI: http://wpbaseju.mp
 Description: A base WordPress theme to build future projects on, be it as a child theme of the Basejump WordPress theme or as a standalone theme.
 Author: Piet Bos 
 Author URI: http://senlinonline.com 
-Version: 0.1.1
+Version: 0.2.0
 License: GNU General Public License
 License URI: license.txt
 Tags: one-column, two-columns, three-columns, fixed-width, custom-background, threaded-comments, translation-ready, custom-menu, responsive
@@ -99,7 +99,7 @@ padding: 0; }
 
 #header { margin: 0 auto; min-height: 100px; width: 100%; }
 
-#title-area { float: left; overflow: hidden; padding: 17px 0 0; width: 50%; }
+#title-area { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; overflow: hidden; padding: 17px 0 0; width: 50%; }
 
 #title { font-family: 'Flexo-CapsDEMO', sans-serif, arial; font-size: 42px; line-height: 1.25; margin: 0; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
 
@@ -107,56 +107,52 @@ padding: 0; }
 
 #description { font-size: 14px; padding: 0 0 0 20px; font-style:italic; color:#555; }
 
-#header .widget-area { float: right; padding: 25px 20px 0 0; width: 48%; }
+#header .widget-area { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: right; padding: 25px 20px 0 0; width: 50%; }
 
-/* Header / Primary / Secondary Navigation 
+/* Header / Primary Navigation 
 ------------------------------------------------------------ */
-.menu-primary, .menu { background-color: #f5f5f5; clear: both; color: #333; font-size: 14px; margin: 0 auto; overflow: hidden; width:
+.menu-primary { background-color: #f5f5f5; clear: both; color: #333; font-size: 14px; margin: 0 auto; overflow: hidden; width:
 100%; }
 
-.menu { border: 1px solid #ddd; box-sizing: border-box; }
+.menu-primary { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-color: #ddd -moz-use-text-color;border-style: solid none;border-width: 1px 0; }
 
-.menu-primary {border-color: #ddd -moz-use-text-color;border-style: solid none;border-width: 1px 0;}
+.menu-primary ul { float: left; width: 100%; }
 
-.menu-primary ul, .menu ul { float: left; width: 100%; }
+.menu-primary li { float: left; list-style-type: none; }
 
-.menu-primary li, .menu li { float: left; list-style-type: none; }
-
-.menu-primary a, .menu a { border-right: 1px solid #ddd; color: #333; display: block; padding: 7px 15px 6px; position: relative;
+.menu-primary a { border-right: 1px solid #ddd; color: #333; display: block; padding: 7px 15px 6px; position: relative;
 text-decoration: none; }
 
-.menu-primary li a:active, .menu-primary li a:hover, .menu-primary .current_page_item a, .menu-primary .current-cat a, .menu-primary .current-menu-item a,
-.menu li a:active, .menu li a:hover, .menu .current_page_item a, .menu .current-cat a, .menu .current-menu-item a { background-color: #fff; color: #333; }
+.menu-primary li a:active, .menu-primary li a:hover, .menu-primary .current_page_item a, .menu-primary .current-cat a, .menu-primary .current-menu-item a { background-color: #fff; color: #333; }
 
-.menu-primary li li a, .menu-primary li li a:link, .menu-primary li li a:visited, .menu li li a, .menu li li a:link, .menu li li a:visited { background: none; background-color: #fff; border: 1px solid #ddd; border-top: none; color: #333; font-size: 12px; padding: 9px 10px 8px; position: relative; text-transform: none; width: 138px; }
+.menu-primary li li a, .menu-primary li li a:link, .menu-primary li li a:visited { background: none; background-color: #fff; border: 1px solid #ddd; border-top: none; color: #333; font-size: 12px; padding: 9px 10px 8px; position: relative; text-transform: none; width: 138px; }
 
-.menu-primary li li a:active, .menu-primary li li a:hover, .menu li li a:active, .menu li li a:hover { background-color: #f5f5f5; color: #333; }
+.menu-primary li li a:active, .menu-primary li li a:hover { background-color: #f5f5f5; color: #333; }
 
-.menu-primary li ul, .menu li ul { height: auto; left: -9999px; margin: 0 0 0 -1px; position: absolute; width: 160px; z-index: 9999; }
+.menu-primary li ul { height: auto; left: -9999px; margin: 0 0 0 -1px; position: absolute; width: 160px; z-index: 9999; }
 
-.menu-primary li ul a, .menu li ul a { width: 140px; }
+.menu-primary li ul a { width: 140px; }
 
-.menu-primary li ul ul, .menu li ul ul { margin: -36px 0 0 159px; }
+.menu-primary li ul ul { margin: -36px 0 0 159px; }
 
-.menu li:hover ul ul, .menu li.sfHover ul ul { left: -9999px; }
+.menu-primary li:hover ul ul, .menu-primary li.sfHover ul ul { left: -9999px; }
 
-.menu li:hover, .menu li.sfHover { position: static; }
+.menu-primary li:hover, .menu-primary li.sfHover { position: static; }
 
-ul.menu li:hover>ul, ul.menu li.sfHover ul, .menu li:hover>ul, .menu li.sfHover ul { left: auto; }
+.menu-primary ul.menu li:hover>ul, .menu-primary ul.menu li.sfHover ul, .menu-primary li:hover>ul, .menu-primary li.sfHover ul { left: auto; }
 
-.menu-primary li a.sf-with-ul, .menu li a.sf-with-ul { padding-right: 25px; }
+.menu-primary li a.sf-with-ul { padding-right: 25px; }
 
-.menu li a .sf-sub-indicator, .menu li li a .sf-sub-indicator, .menu li li li a .sf-sub-indicator { background: url("images/arrow-down.png") no-repeat scroll 0
-0 transparent; height: 8px; position: absolute; right: 6px; text-indent: -9999px; top: 14px; width: 11px; }
+.menu-primary li a .sf-sub-indicator, .menu-primary li li a .sf-sub-indicator, .menu-primary li li li a .sf-sub-indicator { background: url("images/arrow-down.png") no-repeat scroll 0 0 transparent; height: 8px; position: absolute; right: 6px; text-indent: -9999px; top: 14px; width: 11px; }
 
-#nav li a:hover .sf-sub-indicator { background: url("images/arrow-down-hover.png") repeat scroll 0 0 transparent; }
+.menu-primary li a:hover .sf-sub-indicator { background: url("images/arrow-down-hover.png") repeat scroll 0 0 transparent; }
 
-#nav li li a:hover .sf-sub-indicator, #nav li li li a:hover .sf-sub-indicator { background: url("images/arrow-down-hover.png") repeat scroll 0 0 transparent;
+.menu-primary li li a:hover .sf-sub-indicator, .menu-primary li li li a:hover .sf-sub-indicator { background: url("images/arrow-down-hover.png") repeat scroll 0 0 transparent;
 }
 
 #wpadminbar li:hover ul ul { left: 0; }
 
-.menu li.right { float: right; padding: 7px 15px 6px; }
+.menu-primary li.right { float: right; padding: 7px 15px 6px; }
 
 /* Inner 
 ------------------------------------------------------------ */
@@ -401,6 +397,9 @@ word-wrap: break-word; }
 
 .sidebar.widget-area ul ul li { border: none; margin: 0; }
 
+.widget-area .tagcloud { padding: 0 10px; }
+#wp-calendar { padding: 0 10px; width: 100%; }
+
 /* Dropdowns 
 ------------------------------------------------------------ */
 
@@ -449,8 +448,6 @@ input:hover[type="button"], input:hover[type="submit"] { background: url(images/
 
 #footer-widgets .wrap { overflow: hidden; padding: 20px 30px 10px; }
 
-#footer-widgets .widget { background: none; border: none; margin: 0 0 15px; padding: 0; }
-
 #footer-widgets .textwidget { padding: 0; }
 
 #footer-widgets .widget_tag_cloud div div { padding: 0; }
@@ -463,11 +460,11 @@ input:hover[type="button"], input:hover[type="submit"] { background: url(images/
 
 #footer-widgets #wp-calendar thead, #footer-widgets #wp-calendar td { background: none; }
 
-.footer-widgets-1 { width: 217px; float: left; margin: 0; padding: 20px 30px 15px 30px; }
+#footer-widgets .footer-widget { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 25%; background: none repeat scroll 0 0 transparent; border: 0 none; float: left; padding: 20px 15px 15px; }
 
-.footer-widgets-2, .footer-widgets-3 { width: 218px; float: left; margin: 0; padding: 20px 30px 15px 0; }
+#footer-widgets .widget-1 { padding-left: 30px; }
 
-.footer-widgets-4 { width: 217px; float: right; margin: 0; padding: 20px 30px 15px 0; }
+#footer-widgets .widget-4 { padding-right: 30px; }
 
 /* Footer 
 ------------------------------------------------------------ */
@@ -524,7 +521,7 @@ input:hover[type="button"], input:hover[type="submit"] { background: url(images/
 /* Gravity Forms 
 ------------------------------------------------------------ */
 
-div.gform_wrapper input, div.gform_wrapper select, div.gform_wrapper textarea { box-sizing: border-box; font-size: 14px !important; padding: 4px 5px
+div.gform_wrapper input, div.gform_wrapper select, div.gform_wrapper textarea { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 14px !important; padding: 4px 5px
 !important; }
 
 div.gform_footer input.button { color: #333; }
@@ -591,11 +588,11 @@ img #wpstats { display: none; }
 
  #footer-widgets .wrap { padding: 0; }
 
- .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4 { margin: 0; padding: 20px 5px 15px; width: 23%; }
+ #footer-widgets .widget-1, #footer-widgets .widget-2, #footer-widgets .widget-3, #footer-widgets .widget-4 { margin: 0; padding: 20px 5px 15px; width: 25%; }
  
  #footer-widgets .widget { padding: 20px 0 0; }
  
- .footer-widgets-4 { float: left; }
+ #footer-widgets .widget-4 { float: left; }
  
 }
 
@@ -641,5 +638,4 @@ li a:visited, #header .menu li li a, #header .menu li li a:link, #header .menu l
  h1 { font-size: 20px; }
 
 }
-
 

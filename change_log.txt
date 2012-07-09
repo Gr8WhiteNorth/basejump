@@ -1,4 +1,14 @@
 ------------------------------------------------------------------------------------------------------------------
+Version 0.2.0
+	- Changed something in comments structure for Pages
+	- Changed styling top navigation menu
+	- Changed default footer-widgets coding a little bit around
+	- Changed location of <?php wp_footer(); ?>
+	- Changed styling various native WP elements
+	- Changed post header in loop (general and category)
+	- Deleted empty duplicate of Edit link
+
+------------------------------------------------------------------------------------------------------------------
 Version 0.1.1
 	- Added intro text to readme.md
 	- Added screenshot.png

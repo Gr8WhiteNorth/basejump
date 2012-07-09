@@ -1,8 +1,8 @@
 <?php
-/* SO Frame Functions File */
+/* Basejump Functions File */
 
 // Include Functionality & Dashboard Functions Files
-//require_once 'incl/dashboard-functions.php';
+//require_once 'lib/dashboard-functions.php';
 
 // Set the content width based on the theme's design and stylesheet; copied from Twentyeleven
 if ( ! isset( $content_width ) )
@@ -72,32 +72,32 @@ function so_base_theme_setup() {
 			'name'=> __('Footer #1', 'basejump'),
 			'id' => 'footer-1',
 			'description' => __('This is the first column of the footer section.', 'basejump'),
-			'before_widget' => '<div class="widget-area"><div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div><!-- end .widget-area -->',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div><!-- end .widget -->',
 			'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 		));
 		register_sidebar(array(
 			'name'=> __('Footer #2', 'basejump'),
 			'id' => 'footer-2',
 			'description' => __('This is the second column of the footer section.', 'basejump'),
-			'before_widget' => '<div class="widget-area"><div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div><!-- end .widget-area -->',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div><!-- end .widget -->',
 			'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 		));
 		register_sidebar(array(
 			'name'=> __('Footer #3', 'basejump'),
 			'id' => 'footer-3',
 			'description' => __('This is the third column of the footer section.', 'basejump'),
-			'before_widget' => '<div class="widget-area"><div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div><!-- end .widget-area -->',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div><!-- end .widget -->',
 			'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 		));
 		register_sidebar(array(
 			'name'=> __('Footer #4', 'basejump'),
 			'id' => 'footer-4',
 			'description' => __('This is the fourth column of the footer section.', 'basejump'),
-			'before_widget' => '<div class="widget-area"><div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div></div><!-- end .widget-area -->',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div><!-- end .widget -->',
 			'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 		));
 
@@ -299,7 +299,7 @@ add_action( 'comment_form', 'basejump_comment_form' );
 function basejump_comment_form() {
 
 	/** Bail if comments are closed for this post type */
-	if ( ( is_single() ) )
+	if ( ( is_page() ) || ( is_single() ) )
 		return;
 
 	comment_form();
