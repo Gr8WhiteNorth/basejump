@@ -58,7 +58,7 @@ To make a default .pot and .po file
 
 ## Comments / Questions
 
-You can leave any comments and/or ask any questions on the announcement post on [my website](http://senlinonline.com/2012/06/24/basejump-wordpress-theme/)
+You can leave any comments and/or ask any questions in the forum on the [Basejump website](http://wpbaseju.mp/forums/)
 
 ## Demo
 
