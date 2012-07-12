@@ -30,7 +30,7 @@ Although the Basejump WordPress theme is a base theme for you to build upon, it 
 
 ## Installation
 
-The name of the downloaded zip file from Github looks something like senlin-basejump-####.zip and the extracted directory will have the same name. I'd suggest to rename the directory basejump or give it any other name you wish. If you do the latter, make sure to have your stylesheet reflect that name too.
+The name of the downloaded zip file from Github looks something like senlin-basejump-####.zip and the extracted directory will have the same name. I'd suggest to rename the directory to "basejump" or give it any other name you wish. If you do the latter, make sure to have your stylesheet reflect that name too.
 
 Upload the entire basejump directory to the wp-content folder and activate it through the WordPress Dashboard.
 
