@@ -1,4 +1,8 @@
 ------------------------------------------------------------------------------------------------------------------
+Version 0.2.1
+	- renamed functions to be more consequent throughout the theme
+
+------------------------------------------------------------------------------------------------------------------
 Version 0.2.0
 	- Changed something in comments structure for Pages
 	- Changed styling top navigation menu
