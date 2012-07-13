@@ -10,8 +10,8 @@ if ( ! isset( $content_width ) )
 
 
 /* Do theme setup on the 'after_setup_theme' hook. */
-add_action( 'after_setup_theme', 'so_base_theme_setup' );
-function so_base_theme_setup() {
+add_action( 'after_setup_theme', 'basejump_theme_setup' );
+function basejump_theme_setup() {
 	
 	// Add theme support for various things
 	add_theme_support( 'automatic-feed-links' );
@@ -43,7 +43,7 @@ function so_base_theme_setup() {
 	) );
 	
 	// SIDEBARS
-	function so_widgets_init() {
+	function basejump_widgets_init() {
 		register_sidebar(array(
 			'name' => __('Header Widget', 'basejump'),
 			'id' => 'header-promo',
@@ -102,21 +102,21 @@ function so_base_theme_setup() {
 		));
 
 	}
-	/** Register sidebars by running so_widgets_init() on the widgets_init hook. */
-	add_action( 'widgets_init', 'so_widgets_init' );
+	/** Register sidebars by running basejump_widgets_init() on the widgets_init hook. */
+	add_action( 'widgets_init', 'basejump_widgets_init' );
 
 }
 
 // enqueue Superfish scripts
-function so_superfish_scripts() {
+function basejump_superfish_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js?ver=1.4.8', 'jquery', true );
 	wp_enqueue_script( 'superfish-args', get_template_directory_uri() . '/js/superfish.args.js?ver=1.8.0', 'jquery', true );
 }
-add_action('init', 'so_superfish_scripts');
+add_action('init', 'basejump_superfish_scripts');
 
 // Add breadcrumb
-function so_write_breadcrumb() {
+function basejump_write_breadcrumb() {
     $pid = $post->ID;
 	$trail = '<a href="' .home_url( '/' ). '">' . __('Home', 'basejump'). '</a>';
  
@@ -156,7 +156,7 @@ function so_write_breadcrumb() {
  return $trail;
 }
 
-function so_posted_on() {
+function basejump_posted_on() {
 	printf( __( '<span class="%1$s">Posted on</span> %2$s', 'basejump' ),
 		'meta-prep meta-prep-author',
 		sprintf( '<span class="entry-date">%1$s</span>',
@@ -168,21 +168,21 @@ function so_posted_on() {
 /* Make date format (for use in nav bar) properly translatable 
 source: http://wpml.org/forums/topic/date-format-isnt-translated-is-that-possible-done-by-wpml/#post-30197
 */
-function so_update_date_format($newvalue, $oldvalue) {
+function basejump_update_date_format($newvalue, $oldvalue) {
 	if(function_exists('icl_register_string')) {
 		icl_register_string('WP', 'date_format', $newvalue);
 	}
 	return $newvalue;
 }
-add_filter( 'pre_update_option_date_format', 'so_update_date_format', 10, 2);
+add_filter( 'pre_update_option_date_format', 'basejump_update_date_format', 10, 2);
 
-function so_date_format($value) {
+function basejump_date_format($value) {
 	if(function_exists('icl_t')) {
 		return icl_t('WP', 'date_format', $value);
 	}
 	return $value;
 }
-add_filter( 'option_date_format', 'so_date_format');
+add_filter( 'option_date_format', 'basejump_date_format');
 
 /* Custom Language Switch automatically added to navbar
 Source: http://wpml.org/2009/10/building-a-flexible-multilingual-content-site-with-wordpress/ Scroll down to Language Switching
@@ -370,18 +370,18 @@ function basejump_comment_form_args( $defaults ) {
 
 // add tip to contextual help menu, source: https://gist.github.com/2276418 
 // Hat tip to Paul de Wouters for all his input: https://plus.google.com/u/0/108543145122756748887/posts/FcBfQ72BpeL
-add_action( 'load-appearance_page_custom-background', 'so_add_help_tab_to_custom_backgroud_page' );
-function so_add_help_tab_to_custom_backgroud_page()
+add_action( 'load-appearance_page_custom-background', 'basejump_add_help_tab_to_custom_backgroud_page' );
+function basejump_add_help_tab_to_custom_backgroud_page()
 	{
 		get_current_screen()->add_help_tab( array(
 			'id'      => 'custom-background-tip', // This should be unique for the screen.
 			'title'   => __('Useful Tip', 'basejump'),
-			'content' => so_help_tab_content('so-cb-help')
+			'content' => basejump_help_tab_content('so-cb-help')
 		// Use 'callback' instead of 'content' for a function callback that renders the tab content.
 	) );
 	}
 
-function so_help_tab_content($tab = 'so-cb-help') {
+function basejump_help_tab_content($tab = 'so-cb-help') {
 	if($tab == 'so-cb-help') {
 		ob_start(); ?>
 			<h3><?php _e('Great Resource for Custom Background Images', 'basejump'); ?></h3>

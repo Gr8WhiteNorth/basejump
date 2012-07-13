@@ -53,9 +53,9 @@ if ( $site_description && ( is_home() || is_front_page() ) ) echo " | $site_desc
 	
 	<div id="inner">
 	<?php if ( ! is_home() && ! is_404()) {
-		if (function_exists('so_write_breadcrumb') ) { 
+		if (function_exists('basejump_write_breadcrumb') ) { 
 			echo '<div class="breadcrumb">';
-			echo so_write_breadcrumb();
+			echo basejump_write_breadcrumb();
 			echo '</div><!-- .breadcrumb -->';
 		}
 	}
