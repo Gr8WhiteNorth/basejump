@@ -1,4 +1,8 @@
 ------------------------------------------------------------------------------------------------------------------
+Version 0.2.2
+	- discovered that Version 0.2.0 made footer widgets not responsive, so corrected that
+
+------------------------------------------------------------------------------------------------------------------
 Version 0.2.1
 	- renamed functions to be more consequent throughout the theme
 
