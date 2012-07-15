@@ -107,13 +107,15 @@ function basejump_theme_setup() {
 
 }
 
-// enqueue Superfish scripts
-function basejump_superfish_scripts() {
+// enqueue Javascripts
+function basejump_scripts_function() {
+	// general
 	wp_enqueue_script( 'jquery' );
+	// Superfish
 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js?ver=1.4.8', 'jquery', true );
 	wp_enqueue_script( 'superfish-args', get_template_directory_uri() . '/js/superfish.args.js?ver=1.8.0', 'jquery', true );
 }
-add_action('init', 'basejump_superfish_scripts');
+add_action('wp_enqueue_scripts','basejump_scripts_function');
 
 // Add breadcrumb
 function basejump_write_breadcrumb() {

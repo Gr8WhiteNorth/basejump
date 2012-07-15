@@ -54,7 +54,7 @@ On the Page [up to 6 columns](http://wpbaseju.mp/page-templates/full-width/upto-
 
 ## TODO LIST
 
-To make a default .pot and .po file
+<del>To make a default .pot and .po file</del>
 
 ## Comments / Questions
 
