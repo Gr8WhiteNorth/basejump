@@ -1,4 +1,8 @@
 ------------------------------------------------------------------------------------------------------------------
+Version 0.2.4
+	- added the Dutch language file to the languages directory (languages/basejump-nl_NL.mo)
+
+------------------------------------------------------------------------------------------------------------------
 Version 0.2.3
 	- adjusted the enqueue scripts function to be more general
 	- added languages directory with basejump.pot and basejump.po files
