@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------------------------------------------------
+Version 0.2.5
+	- reduced size of header image file (images/basejump.jpg)
+	- some stylesheet changes
+	- added wpml-config.xml file to root of theme and therewith the Basejump theme has been accepted into the WPML
+	  Go Global program with the verdict that "the Basejump theme is perfectly compatible with WPML".
+
+------------------------------------------------------------------------------------------------------------------
 Version 0.2.4
 	- added the Dutch language file to the languages directory (languages/basejump-nl_NL.mo)
 
